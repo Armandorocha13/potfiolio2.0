@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <nav class="navbar flex justify-center">
+        <a href="#home">Home</a>
+        <a href="#technologies">Tecnologias</a>
+        <a href="#projects">Projetos</a>
+        <a href="#about">Sobre Mim</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <div id="home" class="text-center p-10 pt-20">
+        <div class="mb-10 h-screen flex flex-col justify-center md:flex-row md:items-center">
+            <div class="md:w-1/2">
+                <img src="./profile-pic (1).png" alt="Profile picture" class="profile-img" />
+            </div>
+            <div class="md:w-1/2 mt-10 md:mt-0 profile-text">
+                <h1 class="text-2xl mt-4">Olá, meu nome é <span class="text-red-500">Armando Rocha</span> e sou</h1>
+                <h2 class="text-4xl font-bold mt-2">DESENVOLVEDOR FRONT-END</h2>
+            </div>
+        </div>
+  
+
+    <div id="technologies" class="text-center p-10">
+        <h2 class="text-3xl font-bold mt-10">Minhas Tecnologias</h2>
+        <div class="flex justify-center mt-4 space-x-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="tech-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap" class="tech-icon bootstrap-icon">
+        </div>
+        <div class="divider"></div>
+    </div>
+
+    <div id="projects" class="text-center p-10">
+        <h2 class="text-3xl font-bold mb-4">PROJETOS</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <div class="project-card">
+                <img src="./img/1723232159511.jpeg" alt="Loja e-commerce de crochê">
+                <h3 class="text-xl mt-2">Loja e-commerce de crochê</h3>
+                <p>Desenvolvimento de uma landing page para  loja artesanal de crochê.</p>
+                <button class="project-button">Acessar Projeto</button>
+            </div>
+            <div class="project-card">
+                <img src="./img/pagina de venda do iphone 13.jpg" alt="Pagina de venda do iphone 13">
+                <h3 class="text-xl mt-2">Pagina de venda do iphone 13, com alteraçao de cores dinamica com javascript</h3>
+                <p>Página de venda para o Iphone 13.</p>
+                <button class="project-button">Acessar Projeto</button>
+            </div>
+            <div class="project-card">
+                <img src="./img/Imagem do WhatsApp de 2024-10-15 à(s) 15.59.39_896deb02.jpg" alt="Empresa de hospedagem de sites">
+                <h3 class="text-xl mt-2">Sistema para agendamento</h3>
+                <p>Sistema de agendamento para uma barbearia, utilizando javascript, boodstrap e localstorage</p>
+                <button class="project-button">Acessar Projeto</button>
+            </div>
+            <div class="project-card">
+                <img src="./img/gerador de senha.jpg" alt="Loja e-commerce de produtos de animes">
+                <h3 class="text-xl mt-2">Create user page</h3>
+                <p>Pagina de criação de login com sugestao segura utilizando javascript</p>
+                <button class="project-button">Acessar Projeto</button>
+            </div>
+            <div class="project-card">
+                <img src="./img/Imagem do WhatsApp de 2024-08-29 à(s) 03.36.19_78e2f565.jpg" alt="Gerador de QR code">
+                <h3 class="text-xl mt-2">Gerador de QR code</h3>
+                <p>Um gerador de QR code.</p>
+                <button class="project-button">Acessar Projeto</button>
+            </div>
+        </div>
+        <div class="divider"></div>
+    </div>
+
+    <div id="about" class="text-center p-10">
+        <h2 class="text-3xl font-bold mt-10">Sobre Mim</h2>
+        <p class="mt-4">Olá, meu nome é Armando Rocha, atualmente estou cursando Análise e Desenvolvimento de Sistemas na Universidade Veiga de Almeida (UVA). Estou focado em me tornar desenvolvedor front-end na área de programação web. Estou comprometido em aprender mais sobre desenvolvimento Front-End com as seguintes ferramentas: HTML, CSS, JavaScript, React e Typescript
+
+            Meu objetivo no momento é ampliar os meus conhecimentos na área de Front-End aprendendo mais sobre frameworks e biblitecas como o JQuery, Glimmer.js, Bootstrap e etc...
+            
+            Estou em busca de oportunidades que me permitam aplicar os meus conhecimentos e expandir minhas habilidades técnicas, contribuindo para projetos inovadores e de alta qualidade.</p>
+        <div class="divider"></div>
+    </div>
+
+    <div id="contact" class="text-center p-10">
+        <h2 class="text-3xl font-bold mt-10">Envie-me um Email</h2>
+        <form class="mt-4">
+            <input type="text" placeholder="Seu Nome" class="form-input">
+            <input type="email" placeholder="Seu Email" class="form-input">
+            <textarea placeholder="Sua Mensagem" class="form-input" rows="5"></textarea>
+            <button type="submit" class="form-button mt-4">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

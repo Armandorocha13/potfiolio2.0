@@ -1,0 +1,132 @@
+body {
+    background-image: url(../img/436d56f2-5495-41d9-90ba-ca65026b205c.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #eaeaea;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Inicialmente, os elementos começam deslocados e invisíveis */
+.profile-img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    margin-top: -105px;
+    margin-left: 50px;
+    opacity: 0;
+    transform: translateX(-100px); /* Move a imagem 100px para a esquerda */
+    transition: opacity 1s ease-out, transform 1s ease-out, border 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* Transição do texto */
+.profile-text {
+    opacity: 0;
+    transform: translateX(100px); /* Move o texto 100px para a direita */
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Quando a página é carregada, os elementos voltam para sua posição original */
+body.loaded .profile-img {
+    opacity: 1;
+    transform: translateX(0); /* Volta a imagem para o centro */
+}
+
+body.loaded .profile-text {
+    opacity: 1;
+    transform: translateX(0); /* Volta o texto para o centro */
+}
+
+
+.tech-icon .bootstrap-icon {
+    filter: hue-rotate(270deg); /* Ajustado para um tom de roxo */
+}
+
+
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+}
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.project-button {
+    background: #555;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+.project-button:hover {
+    background: red;
+}
+
+
+.divider {
+    height: 1px;
+    background: #000000;
+    margin: 20px 0;
+}
+.form-input {
+    background: rgba(165, 165, 165, 0.502);
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    color: #000000;
+    border-radius: 5px;
+}
+.form-input::placeholder {
+    color: #f4f4f4;
+}
+.form-button {
+    background: #4c4c4c;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.form-button:hover {
+    background: red;
+}
+.tech-icon {
+    width: 40px;
+    height: 40px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 1000;
+}
+.navbar a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+.navbar a:hover {
+    color: red;
+}
