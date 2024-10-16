@@ -1,4 +1,4 @@
-body {
+ body {
     background-image: url(../img/436d56f2-5495-41d9-90ba-ca65026b205c.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -200,4 +200,112 @@ h3{
 
 .navbar a:hover {
     color: red;
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    
+    /* Ajuste da imagem de perfil */
+    .profile-img {
+        width: 250px;
+        height: 250px;
+        margin-top: -80px;
+        margin-left: 20px;
+    }
+
+    /* Texto da profile */
+    .profile-text {
+        font-size: 16px;
+    }
+
+    /* Ajuste dos botões de contato */
+    .contact-button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    /* Ajuste dos ícones de tecnologia */
+    .tech-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Ajuste dos cards de projeto */
+    .project-card {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Botão acessar */
+    #acessar {
+        padding: 8px 16px;
+        margin-left: 15px;
+    }
+
+    /* Ajuste da seta para baixo */
+    .down-arrow {
+        font-size: 35px;
+        margin-top: 250px;
+    }
+
+    /* Ajuste da navbar */
+    .navbar a {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Ajuste da imagem de perfil */
+    .profile-img {
+        width: 200px;
+        height: 200px;
+        margin-top: -60px;
+        margin-left: 10px;
+    }
+
+    /* Texto da profile */
+    .profile-text {
+        font-size: 14px;
+    }
+
+    /* Ajuste dos botões de contato */
+    .contact-button {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    /* Ajuste dos ícones de tecnologia */
+    .tech-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Ajuste dos cards de projeto */
+    .project-card {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    /* Botão acessar */
+    #acessar {
+        padding: 6px 12px;
+        margin-left: 10px;
+    }
+
+    /* Ajuste da seta para baixo */
+    .down-arrow {
+        font-size: 30px;
+        margin-top: 200px;
+    }
+
+    /* Ajuste da navbar */
+    .navbar a {
+        font-size: 16px;
+        margin: 0 5px;
+    }
 }
