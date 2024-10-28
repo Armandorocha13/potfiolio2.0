@@ -32,6 +32,10 @@
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+.text-center p-10{
+ padding-top: -90px
+}
+
 .down-arrow {
 
     position: relative;
